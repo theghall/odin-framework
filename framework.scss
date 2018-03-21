@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Begin RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: sans-serif;
+  	font-size: 16px;
+	line-height: 1.4;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+/* End RESET */
+
+$pageWidth:960;
+$gutter:20;
+$singleColWidth:$pageWidth / 12;
+$cellWidth:$singleColWidth - $gutter;
+
+@mixin wdColumn($colWidth: 1) {
+  .col-wd-#{$colWidth} {
+    width: #{$cellWidth * $colWidth + $gutter * ($colWidth - 1)}px;
+    height: auto;
+    float: left;
+    $sideGutter: #{$gutter / 2}px;
+    margin: 5px $sideGutter 5px $sideGutter;
+  }
+}
+
+.grid_12 {
+  width: #{$pageWidth}px;
+  height: auto;
+  margin-left: 37px;
+  margin-right: 37px;
+}
+
+.row {
+  width: #{$pageWidth}px;
+  clear:both;
+}
+
+@include wdColumn(1);
+@include wdColumn(2);
+@include wdColumn(3);
+@include wdColumn(4);
+@include wdColumn(5);
+@include wdColumn(6);
+@include wdColumn(7);
+@include wdColumn(8);
+@include wdColumn(9);
+@include wdColumn(10);
+@include wdColumn(11);
+@include wdColumn(12);
