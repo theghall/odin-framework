@@ -1,0 +1,53 @@
+a:hover {
+  text-decoration: underline;
+}
+
+.buy-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buy-btn {
+  width: 40px;
+  height: 30px;
+  background-color: red;
+  color: #fff;
+}
+
+.gear-img, 
+.press,
+.recent {
+  float: left;
+  margin-right: 10px;
+}
+
+.row:nth-child(n+2) {
+  margin-top: 50px;
+}
+
+#logo {
+  position: relative;
+  top: 60px;
+}
+
+#feat-book {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+ul {
+  background-color: red;
+  height: 100px;
+}
+
+li a {
+  display: block;
+  float: left;
+  width: 100px;
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  position: relative;
+  top: 60px;
+}

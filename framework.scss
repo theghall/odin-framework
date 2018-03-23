@@ -102,6 +102,7 @@ $cellWidth:$singleColWidth - $gutter;
 
 .row {
   width: #{$pageWidth}px;
+  overflow: hidden;
   clear:both;
 }
 

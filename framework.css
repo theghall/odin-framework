@@ -80,6 +80,7 @@ h6 {
 
 .row {
   width: 960px;
+  overflow: hidden;
   clear: both; }
 
 .col-wd-1 {
