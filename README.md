@@ -4,7 +4,7 @@
 ### ```row``` starts a new row.
 ### A single column is 60px wide with a 20px gutter. Within a row you create div containers using ```class-wd-n``` where n is a number from 1-12.  All the n's must add up to 12.
 
-In the following example we have 3 container divs within the ```grid_12``` container with a width of 300px each.
+### In the following example we have 3 container divs within the ```grid_12``` container with a width of 300px each.
 ```
    <div class="grid_12">
       <div class="row">
